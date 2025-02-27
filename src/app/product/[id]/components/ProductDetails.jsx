@@ -5,6 +5,26 @@ import AddToWishlistButton from "./AddToWishlistButton";
 import BuyNowButton from "./BuyNowButton";
 
 export default function ProductDetails({ product }) {
+
+  const structuredData = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    name: product.title,
+    image: product.thumbnail,
+    description: product.description,
+    brand: { "@type": "Brand", name: product.brand || "Generic" },
+    sku: product.id,
+    offers: {
+      "@type": "Offer",
+      url: `https://yourstore.com/product/${product.id}`,
+      priceCurrency: "USD",
+      price: product.price,
+      itemCondition: "https://schema.org/NewCondition",
+      availability: "https://schema.org/InStock",
+    },
+  };
+
+  
   return (
     <div style={{ maxWidth: "600px", margin: "auto", textAlign: "center" }}>
       <h1>{product.title}</h1>

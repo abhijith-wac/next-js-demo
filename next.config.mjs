@@ -8,6 +8,15 @@ const nextConfig = {
           },
         ],
       },
+      async redirects() {
+        return [
+          {
+            source: "/",
+            destination: "/products",
+            permanent: true, // 301 Redirect (SEO friendly)
+          },
+        ];
+      },
 };
 
 export default nextConfig;

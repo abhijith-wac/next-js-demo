@@ -1,5 +1,5 @@
-import Footer from "@/app/products/components/Footer";
-import Header from "@/app/products/components/Header";
+import Footer from "@/app/components/Footer";
+import Header from "@/app/components/Header";
 import React from "react";
 
 export default function ProductLayout({ children }) {

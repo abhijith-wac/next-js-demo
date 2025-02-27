@@ -9,7 +9,7 @@ export default function Header() {
         <Link href="/" style={{ margin: "0 10px", color: "white", textDecoration: "none" }}>
           Home
         </Link>
-        <Link href="/server-fetching" style={{ margin: "0 10px", color: "white", textDecoration: "none" }}>
+        <Link href="/products" style={{ margin: "0 10px", color: "white", textDecoration: "none" }}>
           Products
         </Link>
       </nav>

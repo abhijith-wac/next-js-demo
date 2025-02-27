@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { getProducts } from "../lib/getProducts";
+import { getProducts } from "../../lib/getProducts";
 
 export default async function ProductsList() {
   const data = await getProducts();

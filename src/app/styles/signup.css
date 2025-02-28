@@ -1,0 +1,98 @@
+/* Basic Styling for the Form */
+.form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for Form Groups (Each Section) */
+  .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Label Styling */
+  .form-group label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+  
+  /* Input Fields Styling */
+  input, textarea, .react-select__control {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  /* Input Fields on Focus */
+  input:focus, textarea:focus, .react-select__control:focus {
+    border-color: #4e9f3d;
+  }
+  
+  /* Select Dropdown (InformedSelect and React-Select) */
+  .react-select__control {
+    min-height: 40px;
+  }
+  
+  .react-select__menu {
+    font-size: 14px;
+  }
+  
+  /* Text Area Styling */
+  textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  /* Disabled Inputs */
+  input:disabled, .react-select__control--is-disabled {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+  }
+  
+  /* Submit Button Styling */
+  .submit-button {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4e9f3d;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Submit Button on Hover */
+  .submit-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Debug Component Styling */
+  .debug-container {
+    background-color: #e8e8e8;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Styling for the Form Header */
+  h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  

@@ -23,7 +23,7 @@ export default function Header() {
         <Link href="/products" style={{ margin: "0 10px", color: "white", textDecoration: "none" }}>
           Products
         </Link>
-        <Link href="/signup" style={{ margin: "0 10px", color: "white", textDecoration: "none" }}>
+        <Link href="/sign-up" style={{ margin: "0 10px", color: "white", textDecoration: "none" }}>
           Sign Up
         </Link>
         <Link href="/login" style={{ margin: "0 10px", color: "white", textDecoration: "none" }}>

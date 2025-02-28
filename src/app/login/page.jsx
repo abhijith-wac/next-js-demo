@@ -1,24 +1,24 @@
-"use client"
-import React from 'react'
-import LoginInput from '../components/customfields/LoginInput'
-import CustomPassword from '../components/customfields/CustomPassword'
-import { validateEmail, validatePassword } from '../hooks/loginValidation'
-import { Form } from 'informed'
-import { FaLock, FaUser } from 'react-icons/fa'
-import { Button } from 'react-bootstrap'
-import '../styles/login.css'
+"use client";
+import React from "react";
+import { Form } from "informed";
+import { Button, Alert } from "react-bootstrap";
+import { FaLock, FaUser } from "react-icons/fa";
+import LoginInput from "../components/customfields/LoginInput";
+import CustomPassword from "../components/customfields/CustomPassword";
+import { validateEmail, validatePassword } from "../hooks/loginValidation";
+import useLogin from "../hooks/useLogin";
+import "../styles/login.css";
 
-const page = () => {
+const Page = () => {
+  const { handleSubmit, errorMessage } = useLogin();
 
-    const handleSubmit=()=>{
-        alert("clicked!")
-    }
   return (
     <div className="login-container">
       <div className="login-form">
         <h2 className="text-center mb-4">Login</h2>
 
-        
+        {errorMessage && <Alert variant="danger">{errorMessage}</Alert>}
+
         <Form onSubmit={handleSubmit}>
           <LoginInput
             name="email"
@@ -40,18 +40,14 @@ const page = () => {
           />
 
           <div className="login-div">
-            <Button
-              variant="primary"
-              type="submit"
-              className="px-4"
-            >
-                Login
+            <Button variant="primary" type="submit" className="px-4">
+              Login
             </Button>
           </div>
         </Form>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default Page;
